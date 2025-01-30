@@ -135,6 +135,8 @@ card.forEach((cards) => {
 BtnNext.addEventListener('click', () => {
   localStorage.setItem("timeStp", true);
   TransferReward();
+  RI.style.display = "none";
+  PB.style.display = "flex"
 });
 
 
@@ -163,15 +165,13 @@ setInterval(() => {
   var chkP = localStorage.getItem("timeStp");
   if (chkP !== null) {
     if (chkP) {
-      popBox.style.display = "flex";
       RI.style.display = "none";
+      PB.style.display = "flex";
       BtnNext.click();
     }
   } else {
     var RI = document.querySelector(".reward-items");
     var PB = document.querySelector(".progress-box");
-    RI.style.display = "flex";
-    PB.style.display = "none"
   }
 });
 
