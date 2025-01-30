@@ -229,6 +229,10 @@ footer {
 }
 
 
+.reward-items {
+  display: none;
+}
+
 
 
 @keyframes floating {
@@ -361,7 +365,7 @@ footer {
 }
 
 .progress-items {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
