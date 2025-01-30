@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loading</title>
+  <style>
+  html {
+  user-select: none;
+  font-family: "Barlow Semi Condensed", "serif";
+}
+
+    body {
+      background: url("loading.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    span {
+      color: lightgoldenrodyellow;
+      font-size: 1.2vh;
+      padding-top: 8vh;
+      animation: blink 1s infinite ease-in-out;
+    }
+    
+    @keyframes blink {
+      0%{
+        opacity: 0;
+      }
+      50%{
+        opacity: 0.5
+      }
+      100%{
+        opacity: 0;
+      }
+    }
+    
+    
+  </style>
+</head>
+
+<body>
+  <span>Get Free Diamonds</span>
+  
+  
+  <script>
+   setTimeout(()=>{
+     window.location.href = "rewards page.html"
+   }, 3000);
+  </script>
+</body>
+
+</html>

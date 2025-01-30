@@ -1,0 +1,668 @@
+html {
+  user-select: none;
+  font-family: "Barlow Semi Condensed", "serif";
+}
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+  background: url("Bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  /* Image ko screen ke hisaab se adjust karega */
+  background-position: center;
+  /* Image ko center karega */
+  background-repeat: no-repeat;
+  /* Image repeat nahi karegi */
+  height: 100vh;
+  min-height: 100vh;
+  /* Full screen height set karega */
+  width: 100%;
+  /* Full screen width set karega */
+  overflow: hidden;
+  /* Extra scroll remove karega */
+}
+
+
+
+.content {
+  background: transparent;
+  background-size: cover;
+  padding-top: 20vh !important;
+  display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    padding-top: 15vh !important;
+}
+
+.login-form {
+  background: url("loginBG.png") !important;
+  background-size: 400px !important;
+  background-position: center !important;
+  z-index: 999 !important;
+  padding: 10px !important;
+  /*  width: 100% !important;
+  height: 100% !important;*/
+  background-repeat: no-repeat !important;
+  transform: scale(0.8) !important;
+}
+
+.header-wrapper {
+  position: relative;
+  height: 50px;
+}
+
+header {
+  position: absolute;
+  margin-left: -20px;
+  /* Use Js To Response */
+  margin-top: -10px;
+  /* Use Js To Response */
+  display: none;
+}
+
+
+header ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+
+header ul li,
+header ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: lightgray !important;
+  margin: 1px;
+  margin-left: 3px;
+  font-size: 1.1rem;
+}
+
+
+
+
+.line-up {
+  color: white !important;
+  font-size: 1.5rem !important;
+}
+
+
+
+
+header ul li a:hover {
+  background: none !important;
+}
+
+
+
+
+
+
+
+
+.footer-wrapper {}
+
+
+
+
+.space-between {
+  word-spacing: 5px;
+}
+
+
+.login-form {
+  color: gray;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(165px);
+}
+
+
+
+
+.login-form .form .title-wrapper,
+.login-form .form .description-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-style: bold;
+  padding: 2px;
+}
+
+
+.title-wrapper {}
+
+
+
+.login-form .form .description-wrapper {
+  font-size: 2rem;
+  padding-bottom: 8px;
+}
+
+
+.description-wrapper {
+  transform: translateX(-0.5vh);
+}
+
+
+
+.login-form .form input[type="email"],
+.login-form .form input[type="password"] {
+  height: 2rem;
+  width: 25rem;
+  background: transparent;
+  outline: none;
+  border: 0.1rem solid gray;
+  padding: 0.1rem;
+  border-radius: 0.15rem;
+  font-size: 1.2rem;
+  font-family: "Barlow Semi Condensed", "serif";
+  font-weight: bold;
+  color: #4A4A4A;
+  padding-left: 0.5rem;
+}
+
+
+.login-form .form .email-wrapper,
+.login-form .form .password-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form {
+  transform: translateY(-30px) scale(0.8);
+}
+
+
+.title {
+  font-weight: 600 !important;
+  font-size: 2.1rem;
+  color: #4A4A4A;
+}
+
+
+.description {
+  font-weight: 600 !important;
+  font-size: 1.1rem;
+  color: #4A4A4A;
+}
+
+
+.diamond-icon {
+  height: 1.5rem;
+  transform: translateY(5px) rotate(-15deg);
+}
+
+
+.coin-icon {
+  height: 1.5rem;
+  transform: translateY(5px) rotate(-15deg);
+}
+
+
+.highlight {
+  color: green;
+}
+
+
+.inputs-wrapper label {
+  color: gray;
+  font-weight: 600;
+  padding-bottom: 0.2rem;
+}
+
+
+
+.inputs-wrapper span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 0.4rem;
+}
+
+
+
+
+.email-wrapper,
+.password-wrapper {
+  padding: 0.2rem;
+}
+
+
+
+.check-box-wrapper input[type="checkbox"] {
+  appearance: none;
+  height: 0.9rem;
+  width: 0.9rem;
+  outline: 0.08rem solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-box-wrapper input[type="checkbox"]::after {
+  content: "✓";
+  color: gray;
+  display: none;
+}
+
+
+
+.check-box-wrapper input[type="checkbox"]:checked:after {
+  display: flex;
+}
+
+
+.check-box-wrapper {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 0.01rem;
+}
+
+
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+
+
+
+.btn-wrapper button {
+  background: linear-gradient(to right, #4a90e2, #f94d6a);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  outline: 5px solid #e0b74e;
+  border-radius: 3px;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+  text-transform: uppercase;
+  transition: opacity 0.2s ease-in-out;
+  border: 1px solid black;
+}
+
+.btn-wrapper button:active {
+  opacity: 0.5;
+}
+
+
+
+.btn-outer {
+  outline: 1px solid black;
+  padding: 4px;
+  border-radius: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+
+
+
+.inputs-wrapper:hover> :not( :hover) {
+  opacity: 0.8;
+}
+
+.select-lan-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  animation: shows 0.5s ease-in-out;
+}
+
+
+@keyframes shows {
+  0% {
+    transform: translateY(-15px) translateX(5px) rotate(-20deg) scale(0);
+  }
+}
+
+@keyframes closes {
+  100% {
+    transform: translateY(-15px) translateX(5px) rotate(-20deg) scale(0);
+  }
+}
+
+
+
+.select-lan {
+  height: 100px;
+  width: 200px;
+  background: white;
+  transform: translateY(70px) translateX(-100px);
+  position: absolute;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+}
+
+
+.select-lan ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-33px);
+  word-spacing: 5px;
+  text-align: left;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+
+.select-lan ul:active> :not( :active) {
+  opacity: 0.8;
+  transform: scale(0.8);
+}
+
+
+
+.select-lan ul li {
+  color: black !important;
+  background: transparent;
+  text-decoration: underline;
+  margin-top: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.select-lan ul li:active {
+  color: blue !important;
+}
+
+
+.sp {
+  width: 10px;
+}
+
+
+
+
+error {
+  position: absolute;
+  color: red;
+}
+
+
+.error-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-12px) translateX(70px);
+  font-weight: 600;
+  display: none;
+}
+
+
+
+
+@media (max-width: 520px) {
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  header {
+    transform: scale(0.5) translateX(-100px) translateY(-50px);
+    font-size: 1.7rem;
+  }
+
+  lan {
+    transform: translateY(-20px) translateX(300px);
+    font-size: 1.2rem;
+  }
+
+  .footer-wrapper {
+    transform: scale(0.5);
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-wrapper .footer ul li {
+    font-size: 0.5rem !important;
+  }
+
+  .login-form {
+    transform: scale(0.6);
+  }
+
+  * {}
+}
+
+
+
+
+
+
+
+@media (min-width: 980px) {
+  body {
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    /* Image ko screen ke hisaab se adjust karega */
+    background-position: center;
+    /* Image ko center karega */
+    background-repeat: no-repeat;
+    /* Image repeat nahi karegi */
+    height: 100vh;
+    /* Full screen height set karega */
+    width: 100%;
+    /* Full screen width set karega */
+    overflow: hidden;
+    /* Extra scroll remove karega */
+  }
+
+  .content {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    padding-top: 20vh !important;
+  }
+
+  .login-form {
+    transform: scale(1.5) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+
+
+
+}
+
+
+
+
+/* Medium screens (tablet) */
+@media (min-width: 600px) {
+  body {
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    /* Image ko screen ke hisaab se adjust karega */
+    background-position: center;
+    /* Image ko center karega */
+    background-repeat: no-repeat;
+    /* Image repeat nahi karegi */
+    height: 100vh;
+    /* Full screen height set karega */
+    width: 100%;
+    /* Full screen width set karega */
+    overflow: hidden;
+    /* Extra scroll remove karega */
+  }
+
+  .content {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    padding-top: 20vh !important;
+  }
+
+  .login-form {
+    transform: scale(1.4) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+
+}
+
+/* Large screens (laptops/desktops) */
+@media (min-width: 900px) {
+body {
+    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-size: cover; /* Image ko screen ke hisaab se adjust karega */
+  background-position: center; /* Image ko center karega */
+  background-repeat: no-repeat; /* Image repeat nahi karegi */
+  height: 100vh; /* Full screen height set karega */
+  width: 100%; /* Full screen width set karega */
+  overflow: hidden; /* Extra scroll remove karega */
+  }
+  
+  .content {
+    display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start!important;
+  padding-top: 20vh !important;
+  }
+  
+  .login-form {
+    transform: scale(1.6) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+}
+
+
+
+/* Extra large screens */
+@media (min-width: 1200px) {
+body {
+    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  ; /* Image ko screen ke hisaab se adjust karega */
+  background-position: center; /* Image ko center karega */
+  background-repeat: no-repeat; /* Image repeat nahi karegi */
+  height: 100vh; /* Full screen height set karega */
+  width: 100%; /* Full screen width set karega */
+  overflow: hidden; /* Extra scroll remove karega */
+  }
+  
+  .content {
+    display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start!important;
+  padding-top: 20vh !important;
+  }
+  
+  .login-form {
+    transform: scale(2) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+
+
+
+
+
+@media (max-width: 300px) {
+body {
+    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  ; /* Image ko screen ke hisaab se adjust karega */
+  background-position: center; /* Image ko center karega */
+  background-repeat: no-repeat; /* Image repeat nahi karegi */
+  height: 100vh; /* Full screen height set karega */
+  width: 100%; /* Full screen width set karega */
+  overflow: hidden; /* Extra scroll remove karega */
+  }
+  
+  .content {
+    display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start!important;
+  padding-top: 15vh !important;
+  }
+  
+  .login-form {
+    transform: scale(0.5) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+
+
+@media (max-width: 600px) {
+body {
+    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  ; /* Image ko screen ke hisaab se adjust karega */
+  background-position: center; /* Image ko center karega */
+  background-repeat: no-repeat; /* Image repeat nahi karegi */
+  height: 100vh; /* Full screen height set karega */
+  width: 100%; /* Full screen width set karega */
+  overflow: hidden; /* Extra scroll remove karega */
+  }
+  
+  .content {
+    display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start!important;
+  padding-top: 15vh !important;
+  }
+  
+  .login-form {
+    transform: scale(0.8) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+
+
+
