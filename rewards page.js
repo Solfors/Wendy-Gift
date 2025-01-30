@@ -34,8 +34,7 @@ function TransferReward() {
 
       if (remainingTime <= 0) {
         TimeLeft.innerText = "0 sec";
-        pointCount = "100%
-        pointCount = "100%";
+        pointCount.innerText = "100%";
         localStorage.removeItem("timeStp");
         localStorage.removeItem("endTime");
         window.location.reload();
@@ -179,3 +178,4 @@ setInterval(() => {
 
 
 closeBtn.click();
+popOn.style.display = "none";
