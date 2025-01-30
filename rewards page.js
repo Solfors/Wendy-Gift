@@ -159,14 +159,16 @@ setInterval(() => {
   point.style.width = pointCount.innerText;
 });
 
-var RI = document.querySelector(".reward-items");
-var PB = document.querySelector(".progress-box");
+var chkP = localStorage.getItem("timeStp");
 
 setInterval(() => {
-  var chkP = localStorage.getItem("timeStp");
+  
   if (chkP !== null) {
     if (chkP) {
-      popBox.style.display = "flex";
+      var RI = document.querySelector(".reward-items");
+      var PB = document.querySelector(".progress-box");
+
+     
       RI.style.display = "none";
       BtnNext.click();
     }
@@ -174,7 +176,7 @@ setInterval(() => {
     var RI = document.querySelector(".reward-items");
     var PB = document.querySelector(".progress-box");
     RI.style.display = "flex";
-    PB.style.display = "none"
+    PB.style.display = "none";
   }
 });
 
